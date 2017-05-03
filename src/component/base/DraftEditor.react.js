@@ -244,6 +244,9 @@ class DraftEditor extends React.Component {
             aria-haspopup={readOnly ? null : this.props.ariaHasPopup}
             aria-label={this.props.ariaLabel}
             aria-owns={readOnly ? null : this.props.ariaOwneeID}
+            autoCapitalize={false}
+            autoComplete={false}
+            autoCorrect={false}
             className={cx('public/DraftEditor/content')}
             contentEditable={!readOnly}
             data-testid={this.props.webDriverTestID}
